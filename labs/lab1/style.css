@@ -1,0 +1,39 @@
+header {
+    background-color: rgb(157, 207, 165); 
+    border: 5px solid rgb(150, 156, 152);
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(57, 56, 56);
+    font-family: "Montserrat", sans-serif;
+}
+a:link {
+    color: rgb(255, 255, 255);
+}
+a:visited {
+    color: rgb(100, 135, 102);
+}
+a:hover{
+    color: rgb(71, 95, 72);
+    font-weight: bold;
+}
+nav {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 10px; 
+}
+body {
+    background-color: rgb(179, 231, 218);
+} 
+
+.footingContent {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+}
+
+.footerbox{
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+}

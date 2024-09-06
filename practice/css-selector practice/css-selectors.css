@@ -1,0 +1,45 @@
+body{
+    background-color:black;
+}
+.image-column {
+    display:flex;
+    justify-content:center;
+}
+.image-box {
+    text-align: center; 
+    width:40%;
+}
+figcaption {
+    color:white; 
+    font-size:max(2vw, 4vw);
+}
+#title{
+    color: yellow; 
+    text-align: center; 
+    font-family: 'Pacifico', cursive; 
+    font-size:max(2vw, 7vw); 
+    margin:0 auto;
+}
+
+.image {
+    border-top-left-radius:25px; 
+    border:1px solid yellow;
+    width:100%;
+    height:auto;
+}
+
+#separator{
+    width:75%;
+    margin-top:20px;
+}
+
+#logo{
+    font-size:3vw; 
+    color:silver;
+    text-align:center; 
+    top-padding:10px;
+}
+
+#logo-image {
+    width:15%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+    <style>
+        h1 {
+            color: rgb(120,150,150);
+        }
+        .heading{
+            text-align: center;
+            padding: 5px;
+            border: 5px black solid;
+            margin: 0 auto; /*centers the box model*/
+            width: 30%;
+        }
+        span {
+            font-size: 1.2em;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .imageClass {
+            width: 100%;
+            height: 300px;
+            border: 5px solid black;
+            object-fit: cover;
+        }
+        figure {
+            width: 40%;
+        }
+
+        #programsBox {
+            background-color: rgb(234, 190, 241);
+            border: 5px black solid;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading" style="background-color:blanchedalmond;"> School of Computing and Design </h1>
+  <p>  The <span>School of Computing & Design (SCD)</span> educates students to apply state-of-the-art information technology to solve real world communication problems in a socially responsible way.</p>
+<h2> Degree programs </h2>
+  <div id="programsBox">
+    <figure>
+      <img class="imageClass" src="https://tinyurl.com/cd-image" alt="img1" width="100">
+      <figcaption> Communication Design </figcaption>
+    </figure>
+    <figure>
+       <img class="imageClass" src="https://tinyurl.com/cs-image" alt="img2" width="100">
+       <figcaption> Computer Science </figcaption>
+    </figure>
+  </div>
+  <h3> Minor Programs </h3>
+  <ul>
+    <li>Minor in Communication Design</li>
+    <li>Minor in CS and Information Systems </li>
+   </ul>
+</body>
+</html>

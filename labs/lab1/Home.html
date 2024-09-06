@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        .images {
+            text-align: center;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+        }
+        .imageClass{
+            width: 100%;
+            height: 300px;
+            border: 2px rgb(100, 135, 102) solid;
+            object-fit: cover;
+        }
+
+        #imageBox {
+            background-color: rgb(157, 207, 165);
+            border: 5px solid rgb(150, 156, 152);
+            display: flex;
+            flex: 0 1 auto;
+            justify-content: center;
+        }
+        #intro-text{
+            text-align: center;
+            font-family:"Courier New", monospace
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Team 11</h1>
+        <!-- <input type="text">  creates a search box-->
+    </header>
+
+    <nav>
+        <div class="navContent">
+            <a href="Home.html" style="color: black;">Home</a> 
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+    <hr width="98%" color="gray" size="2">
+    <main>
+        <div id="imageBox">
+            <figure class="images">
+                <img class="imageClass" src="images/img-1.png" alt="Will" width="200" height="200">
+                <figcaption>Ghita</figcaption>
+            </figure>
+            <figure class="images">
+                <img class="imageClass" src="images/img-1.png" alt="Will" width="200" height="200">
+                <figcaption>Will</figcaption>
+            </figure>
+            <figure class="images">
+                <img class="imageClass" src="images/img-1.png" alt="Tuna" width="200" height="200">
+                <figcaption>Tuna</figcaption>
+            </figure>
+            <figure class="images">
+                <img class="imageClass" src="images/img-1.png" alt="Bryan" width="200" height="200">
+                <figcaption>Bryan</figcaption>
+            </figure>
+        </div>
+        <div id="intro-text">
+            <p>Hello! Thank you for visiting our website.</p>
+            <p>"The only way to do great work is to love what you do."</p>
+            <p> - Steve Jobs </p>
+        </div>
+        
+    </main>
+    <hr width="98%" color="gray" size="2">
+    <footer>
+        <div class="footerBox">
+            <figure class="footingContent">
+                <img src="images/CsumbLogoTransparent.png" alt="CSUMB Logo">
+            </figure>
+            <figure class="footingContent">
+                <p>CST336 Internet Programming. 2024&copy; Brady-Diaz , Berry, Borja, </p>
+                <p>Disclaimer: This is our first website. May contain false information.</p>
+                <p>It is used for academic purposes only</p>                
+            </figure>
+        </div>
+    </footer>
+</body>
+</html>
