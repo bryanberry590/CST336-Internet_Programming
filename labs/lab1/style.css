@@ -30,6 +30,8 @@ body {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
+    font-size: small;
+    color:rgb(73, 83, 76)
 }
 
 .footerbox{
