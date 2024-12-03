@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(164, 172, 134);
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#headingTitle {
+    color: rgb(51, 61, 41);
+    margin: 0 auto;
+    width: 20%;
+    border-radius: 30%;
+    border: 3px rgb(51, 61, 41) solid;
+}
+.questions {
+    font-size: 20px;
+    color: rgb(88, 47, 14);
+}
+#q1Choices{
+    font-size: 20px;
+    color: rgb(88, 47, 14);
+}
+hr{
+    width: 50%;
+    border-color: rgb(101, 109, 74);
+}
+#q2Choices{
+    color: rgb(88, 47, 14);
+}
+button {
+    color: rgb(51, 61, 41);
+    background-color: rgb(182, 173, 144);
+    font-size: 20px;
+}
+#attemptCount{
+    color:rgb(51, 61, 41);
+    font-style: italic;
+}
+.textBox{
+    color: rgb(51, 61, 41);
+}

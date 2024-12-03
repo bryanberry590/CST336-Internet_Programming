@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Quote</h1>
+    <%- include('partials/menu.ejs') %>
+
+    <form action="/addQuote" method="post">
+        <select name="author" id="author">
+            <option value="1">Albert Einstein</option>
+            <option value="2">Agatha Christie</option>
+        </select>
+        <br>
+        <select name="category" id="category">
+            <option value="Inspirational">Inspirational</option>
+            <option value="Motivational">Motivational</option>
+        </select>
+        <br>
+        <label for="quote">Quote</label>
+        <textarea id="quote" name="quote"></textarea>
+        <br>
+
+
+        <button>Add Quote</button>
+    </form>
+    
+</body>
+</html>

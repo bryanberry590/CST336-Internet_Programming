@@ -1,0 +1,34 @@
+button {
+    background-color: rgb(133, 41, 40);
+    color: rgb(255,215,0);
+}
+#slots{
+    background-color: rgb(133, 41, 40);
+    display: inline-flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.slotsImg img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+#title {
+    color: rgb(255,215,0);
+    font-size: 50px;
+}
+body{
+    text-align: center;
+    background-color: rgb(30,30,30);
+}
+#prompt{
+    font-size: 40px;
+    color: rgb(255,215,0);
+    font-weight: bold;
+    -webkit-text-stroke: 3px rgb(133, 41, 40);
+}
+#currAmount{
+    color: rgb(255,215,0);
+}

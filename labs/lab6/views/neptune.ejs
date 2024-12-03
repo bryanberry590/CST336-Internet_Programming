@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body id="background">
+
+    <p id = "pageTitle">Neptune</p>
+    <%- include('partials/menu.ejs') %>
+
+    <p>Distance from sun: <%= neptuneData.distanceFromSun %></p>
+    <p> <%= neptuneData.description %></p>
+    <img src="<%= neptuneData.image %>" alt="">
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+#background{
+    background-image: url("https://wallpapersok.com/images/hd/an-unamused-rick-from-rick-and-morty-agpuysmhk3lhdl4p.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(228, 212, 246);
+}
+#homeBody{
+    background-image: url("https://images.alphacoders.com/876/876589.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    text-align: center;
+    color: rgb(204, 214, 238);
+}
+#homeBackground{
+    background-color: rgba(252, 251, 251, 0.99);
+    filter: opacity(50%);
+    color: rgb(7, 7, 7);
+}
+#navMenu{
+    font-size: 20px;
+}
+a:link{
+    color: rgb(60, 247, 172);
+}
+a:visited{
+    color: rgb(58, 151, 234);
+}
+a:hover{
+    color:rgb(255, 255, 255);
+}
+a:active{
+    color: rgb(230, 70, 42);
+}
+#fact{
+    font-size: 25px;
+    color:rgb(246, 246, 246)
+}
+

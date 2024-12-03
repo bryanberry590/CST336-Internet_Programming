@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+</head>
+<body>
+    <h1>Authors</h1>
+    <%- include('partials/menu.ejs') %>
+    <br>
+
+    <% for(let i of authors) { %>
+        <p> [ <a href="/author/edit?authorId=<%= i.authorId %>">Update</a> ]  <%= i.firstName %> <%= i.lastName %> </p>
+    <% } %>
+
+    
+
+
+</body>
+</html>

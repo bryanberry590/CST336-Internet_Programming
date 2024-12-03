@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body id="background">
+    
+    <p id = "pageTitle">Nasa</p>
+    <%- include('partials/menu.ejs') %>
+
+    <br><br>
+    <p>Please enter a date between Jun 16, 1995 and the current date</p>
+    <br>
+    <form id="nasaForm">
+        <label>Month
+            <select id="month" name="monthSelect">
+                <option value = "none">Select a Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </label>
+        <br><br>
+        <label>Day
+            <input name="daySelect" type="number" max="31" min="1" placeholder="00">
+        </label>
+        <br><br>
+        <label>Year
+            <input name="yearSelect" type="text" placeholder="0000">
+        </label>
+        <br><br>
+        <button>Display Media</button>
+    </form>
+    <br><br>
+    <img src="<%= image.url %>">
+    <br><br>
+    <h1 id="nasaDescription"><%= image.explanation %></h1>
+
+
+</body>
+</html>

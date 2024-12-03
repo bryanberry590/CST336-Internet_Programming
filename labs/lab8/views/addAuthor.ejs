@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add New Author</h1>
+    <%- include('partials/menu.ejs') %>
+
+    <form action="/addAuthor" method="post">
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName">
+        <br>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName">
+        <br>
+        <label for="dob">Date of Birth</label>
+        <input id="dob" name="dob" type="date">
+        <br>
+        <label for="dod">Date of Death</label>
+        <input id="dod" name="dod" type="date">
+        <br>
+            <label>Sex:</label>
+            <input type="radio" id="F" name="sex" value="Female">
+            <label for="F">Female</label>
+            <input type="radio" id="M" name="sex" value="Male">
+            <label for="M">Male</label>
+        <br>
+        <label for="profession">Profession</label>
+        <input id="profession" name="profession">
+        <br>
+        <label for="country">Country</label>
+        <input id="country" name="country">
+        <br>
+        <label for="portrait">Portrait</label>
+        <textarea id="portrait" name="portrait"></textarea>
+        <br>
+        <label for="biography">Biography</label>
+        <textarea id="biography" name="biography"></textarea>
+        <br>
+        <button>Add Author</button>
+    </form>
+
+    <script src="/js/author.js"></script>
+</body>
+</html>

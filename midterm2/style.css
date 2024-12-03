@@ -1,0 +1,27 @@
+#title{
+    text-align: center;
+    border: 5px black solid;
+
+}
+#heroBox{
+    text-align: center;
+}
+
+#submitBtn{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: gray;
+}
+#q1Choices{
+    margin-top: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+
+#heroImg{
+    width: 300px;
+    height: 300px;
+}
+

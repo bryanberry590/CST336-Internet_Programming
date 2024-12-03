@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-color: rgb(84,154,171);
+}
+h1{
+    border: 3px solid rgb(18,55,64);
+    color: rgb(255,187,154);
+}
+#errMsg{
+    font-weight: bold;
+}
+#listPets{
+    color: rgb(255,187,154);
+}
+table{
+    margin: 0 auto;
+}
+#addBtn{
+    background-color: rgb(18,55,64);
+    color: rgb(255,187,154);
+    font-weight: bold;
+}
+#showPets{
+    background-color: rgb(18,55,64);
+    color: rgb(225, 166, 137);
+    font-weight: bold;
+}

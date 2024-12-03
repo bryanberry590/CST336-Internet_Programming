@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('partials/head.ejs') %>
+</head>
+<body id="homeBody">
+    <p id = "pageTitle">Welcome to the Solar System</p>
+    <%- include('partials/menu.ejs') %>
+
+    <form id = "selectBox" action="/planetInfo">
+        <select name="selectBody">
+            <option name="Comets">Comets</option>
+            <option name="Asteroids">Asteroids</option>
+        </select>
+        <br>
+        <button>Get Info</button>
+    </form>
+
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

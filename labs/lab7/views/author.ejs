@@ -1,0 +1,26 @@
+<div class="modal fade" id="authorModal" tabindex="-1" aria-labelledby="authorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="authorModalLabel">Author Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <% if (rows) { %>
+                    <p><strong>Name:</strong> <%= rows[0].firstName %> <%= rows[0].lastName %></p>
+                    <p><strong>Date of Birth:</strong> <%if(rows[0].dob){%><%= new Date(rows[0].dob).toISOString().split('T')[0] %><%}%></p>
+                    <p><strong>Date of Death:</strong> <%if(rows[0].dod){%><%= new Date(rows[0].dod).toISOString().split('T')[0] %><%}%></p>
+                    <p><strong>Sex:</strong> <%= rows[0].sex %></p>
+                    <p><strong>Profession:</strong> <%= rows[0].profession %></p>
+                    <p><strong>Country:</strong> <%= rows[0].country %></p>
+                    <img src="<%= rows[0].portrait %>" alt="author portrait" width="250">
+                    <p><strong>Biography:</strong> <%= rows[0].biography %></p>
+                <% } %>
+                    
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Page Styles</h1>
+
+    <label>
+    Text Color:
+    <input type="text" id="textColor" placeholder="Enter Text Color"> 
+    </label>
+
+    <!-- can also have value="Pink" ^^ -->
+    <button id="textColorBtn">Change Color</button>
+    
+
+    <hr>
+
+    <label>
+    Text Size:
+    <input type="number" id="textSize" min="1" max="3" step="0.1" placeholder="1.0">
+    </label>    
+    <button id="textSizeBtn">Change Size</button>
+
+    <hr>
+
+    <label>
+    Background Color:
+    <select id="bgColor">
+        <option value="#f08e73"> Red </option>
+        <option> Green </option>
+        <option value="cyan"> Blue </option>
+    </select>
+    </label>
+    <button id="bgColorBtn">Change Bg Color</button>
+
+    <hr>
+
+    <label>
+    Centered:
+    <input type="checkbox" id="alignment" value="value">
+    </label>
+    <button id="alignmentBtn">Update</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

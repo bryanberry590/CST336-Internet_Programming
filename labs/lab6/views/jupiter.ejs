@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body id="background">
+
+    <p id = "pageTitle">Jupiter</p>
+    <%- include('partials/menu.ejs') %>
+
+    <p>Distance from sun: <%= jupiterData.distanceFromSun %></p>
+    <p> <%= jupiterData.description %></p>
+    <img src="https://science.nasa.gov/wp-content/uploads/2024/03/jupiter-marble-pia22946-16x9-1.jpg?w=4096&format=jpeg&crop=1" alt="">
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

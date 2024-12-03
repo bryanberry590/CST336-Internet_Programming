@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Character Page</title>
+</head>
+<body id="background">
+    <h1>Character Search</h1>
+    <%- include('partials/menu.ejs') %>
+    <hr>
+    <p id="fact">Fun Fact: Rick and Morty has 826 total characters!</p>
+    <br>
+
+    <form action="/character">
+        <h3>Status:
+        <select id="status" name="status">
+            <option value="null">Select an Option</option>
+            <option value="">Any</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+        </select></h3>
+
+        <h3>Gender:
+        <select id="gender" name="gender">
+            <option value="null">Select an Option</option>
+            <option value="">Any</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+        </select></h3>
+
+        <h3>Species:
+        <select id="species" name="species">
+            <option value="null">Select an Option</option>
+            <option value="">Any</option>
+            <option value="Human">Human</option>
+            <option value="Alien">Alien</option>
+            <option value="Humanoid">Humanoid</option>
+            <option value="Poopybutthole">Poopybutthole</option>
+            <option value="Mythological Creature">Mythological Creature</option>
+            <option value="Robot">Robot</option>
+            <option value="Cronenberg">Cronenberg</option>
+            <option value="Disease">Disease</option>
+            <option value="Animal">Animal</option>
+            <option value="unknown">Unknown</option>
+        </select></h3>
+        
+        <button>See Filtered Characters</button><br><br>
+    </form>
+    <%if(filterCheck){%>
+        <%if(characters.length > 0) { %>
+            <% for(let character of characters) {%>
+                <h3>Character <%= character.id %>:</h3>
+                Name: <%= character.name %><br>
+                Gender: <%= character.gender %><br>
+                Status: <%= character.status %><br>
+                Species: <%= character.species %><br>
+
+            <% } %>
+        <%} else {%>
+            <h3>No Characters Exist For This Filter</h3>
+        <%}%>
+    <%} else {%>
+        <h3>Please Select a Filter</h3>
+    <%}%>
+
+    <br><br>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

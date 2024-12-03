@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Author</h1>
+    <%- include('partials/menu.ejs') %>
+
+    <form action="/author/edit" method="post">
+        <input type="hidden" name = "authorId" value="<%= authorData[0].authorId %>">
+        <br>
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" value="<%= authorData[0].firstName %>">
+        <br>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" value="<%= authorData[0].lastName %>">
+        <br>
+        <label for="dob">Date of Birth</label>
+
+        <input id="dob" name="dob" type="date" value="<%= new Date(authorData[0].dob).toISOString().split('T')[0] %>">
+        <br>
+        <label for="dod">Date of Death</label>
+
+        <input id="dod" name="dod" type="date" value="<%= new Date(authorData[0].dod).toISOString().split('T')[0] %>">
+        <br>
+                <label>Sex:</label>
+                <input type="radio" id="F" name="sex" value="Female"
+                <%if(authorData[0].sex == 'F'){%>
+                    <%="checked"%>
+                <%}%>
+                >
+                <label for="F">Female</label>
+                <input type="radio" id="M" name="sex" value="Male"                
+                <%if(authorData[0].sex == 'M'){%>
+                    <%="checked"%>
+                <%}%>
+                >
+                <label for="M">Male</label>
+
+            
+
+        <br>
+        <label for="profession">Profession</label>
+        <input id="profession" name="profession" value="<%= authorData[0].profession %>">
+        <br>
+        <label for="country">Country</label>
+        <input id="country" name="country" value="<%= authorData[0].country %>">
+        <br>
+        <label for="portrait">Portrait</label>
+        <textarea id="portrait" name="portrait"><%= authorData[0].portrait %></textarea>
+        <br>
+        <label for="biography">Biography</label>
+        <textarea id="biography" name="biography"><%= authorData[0].biography %></textarea>
+        <br>
+        <button>Update Author</button>
+    </form>
+
+    <script src="/js/author.js"></script>
+</body>
+</html>

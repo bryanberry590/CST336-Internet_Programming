@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <% if(errorCheck) {%>
+        <h3 id="hiddenMsg"> <%= message %> </h3>
+    <% } else { %>
+        <h3 id="hiddenMsg" style="display: none;"></h3>
+    <% } %>
+
+
+    <form action="/login" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username"><br>
+        <label for="password">Password</label>
+        <input type="password" name="password"><br>
+        <button>Login</button>
+    </form>
+
+    <form action="/createAccount" method="POST">
+        <button>Create an Account</button>
+    </form>
+    
+</body>
+</html>

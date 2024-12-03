@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+<body id = "homeBody">
+    <h1>Rick and Morty Wiki</h1>
+    <%- include('partials/menu.ejs') %>
+    <hr>
+    <div id="homeBackground">
+        <div id="homeText"></div>
+            <br>
+            <h1>Welcome to the Rick and Morty Wiki</h1>
+            <br><br>
+            <h2>Click any of the menu links to look through the Episodes, Locations, or Characters!</h2><br><br>
+            <h2>Enjoy!</h2>
+            <br>
+            <h2>Random Quote From Rick n Morty:</h2>
+            <h2><%=quote%></h2>
+            <br>
+        </div>
+    </div>
+    <br><br>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

@@ -1,3 +1,19 @@
+
+let guessButton = document.querySelector("#guessButton");
+let guessInput = document.querySelector("#guessInput");
+
+guessButton.addEventListener("click", function() {
+    let message = document.querySelector("#message");
+    message.innerText = `The number you entered is ${guessInput.value}`;
+    message.style.color = "green";
+    message.style.fontWeight = "bold";
+});
+
+
+
+
+
+
 //alert(new Date());
 let today = new Date();
 let year = today.getFullYear();

@@ -1,0 +1,56 @@
+#background{
+    background-color: rgb(42, 42, 42); 
+    color:rgb(228, 212, 246);
+}
+#homeBody{
+    background-image: url("https://theplanets.org/123/2021/11/solar-system-facts.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#footer{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(108, 108, 108);
+}
+#pageTitle{
+    text-align: center;
+    color: rgb(132, 132, 132);
+    font-size: 30px;
+}
+#navMenu{
+    text-align: center;
+}
+a:link{
+   color: rgb(132, 132, 132);
+}
+a:visited{
+    color: rgb(94, 75, 122);
+}
+a:hover{
+    color: rgb(228, 212, 246);
+}
+a:active{
+    color:rgb(95, 12, 139);
+}
+#selectBox{
+    text-align: center;
+    color: azure;
+}
+p{
+    text-align: center;
+    color:rgb(133, 133, 133);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#nasaDescription{
+    font-size: 18px;
+    color:rgb(133, 133, 133);
+    text-align: center;
+}
+#nasaForm{
+    text-align: center;
+}
